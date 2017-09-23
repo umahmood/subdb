@@ -1,7 +1,7 @@
 # SubDB
 
-A Go library to access SubDB. A free, centralized subtitle database intended to 
-be used only by opensource and non-commercial softwares.
+A Go library to access [SubDB](http://thesubdb.com/). A free, centralized subtitle 
+database intended to be used only by open-source and non-commercial softwares.
 
 # Installation
 
