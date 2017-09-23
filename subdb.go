@@ -196,7 +196,7 @@ func postRequest(hash, subtitleFile, userAgent string) error {
 	req.Header.Set("Content-Type", writer.FormDataContentType())
 	req.Header.Set("User-Agent", userAgent)
 	req.Close = true
-	c := &http.Client{}
+	c := &http.Client{Timeout: 5 * time.Second}
 	resp, err := c.Do(req)
 	if resp != nil {
 		defer resp.Body.Close()
